@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CommentForm from "../CommentForm/CommentForm";
+import { assetPath } from "../../helper/assetPath";
 
 const BlogPost = ({ post }) => {
   const {
@@ -42,13 +43,13 @@ const BlogPost = ({ post }) => {
             <p className="me-5">Social Share:</p>
             <div className="social-icon">
               <Link to="https://www.facebook.com/">
-                <img src="/assets/img/icon/facebookicon.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/facebookicon.svg")} alt="..." />
               </Link>
               <Link to="https://www.linkedin.com/">
-                <img src="/assets/img/icon/linkedinicon.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/linkedinicon.svg")} alt="..." />
               </Link>
               <Link to="https://www.x.com/">
-                <img src="/assets/img/icon/twittericon.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/twittericon.svg")} alt="..." />
               </Link>
             </div>
           </div>

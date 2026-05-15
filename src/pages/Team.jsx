@@ -4,7 +4,9 @@ import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 import PersonDetails from "../components/Team/PersonDetails";
 import MemberCard from "../components/Team/MemberCard";
 
-import membersData from "../dataJson/teamMembersData.json";
+import membersDataRaw from "../dataJson/teamMembersData.json";
+const membersData = withBase(membersDataRaw);
+import { withBase } from "../helper/assetPath";
 
 const Team = () => {
   return (

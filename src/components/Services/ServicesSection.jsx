@@ -3,7 +3,9 @@ import { MoreBtn } from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import { Link } from "react-router-dom";
 
-import servicesData from "../../dataJson/servicesData.json";
+import servicesDataRaw from "../../dataJson/servicesData.json";
+const servicesData = withBase(servicesDataRaw);
+import { withBase } from "../../helper/assetPath";
 
 const ServicesSection = ({ styleTypeTwo }) => {
   const data = styleTypeTwo ? servicesData.slice(0, 3) : servicesData;

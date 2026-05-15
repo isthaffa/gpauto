@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MoreBtn } from "../Button/Button";
+import { assetPath } from "../../helper/assetPath";
 
 const ServicesDetailContent = ({ service }) => {
   const {
@@ -18,7 +19,7 @@ const ServicesDetailContent = ({ service }) => {
               <h4 class="single-blog-title">{title}</h4>
               <p class="single-blog-desp">{description}</p>
               <img
-                src="/assets/img/service/services-single.jpg"
+                src={assetPath("/assets/img/service/services-single.jpg")}
                 data-aos="fade-up"
                 class="img-fluid"
                 alt="..."

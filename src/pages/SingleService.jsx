@@ -6,7 +6,9 @@ import ServicesDetailContent from "../components/Services/ServicesDetailContent"
 import FrequentlyQuestions from "../components/FrequentlyQuestions/FrequentlyQuestions";
 import Cta from "../components/Cta/Cta";
 
-import serviceData from "../dataJson/serviceDetails.json";
+import serviceDataRaw from "../dataJson/serviceDetails.json";
+const serviceData = withBase(serviceDataRaw);
+import { withBase } from "../helper/assetPath";
 
 const SingleService = () => {
   const { serviceId } = useParams();

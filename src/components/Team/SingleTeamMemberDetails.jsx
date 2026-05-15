@@ -1,4 +1,5 @@
 import React from "react";
+import { assetPath } from "../../helper/assetPath";
 
 const SingleTeamMemberDetails = ({ team }) => {
   const {
@@ -47,13 +48,13 @@ const SingleTeamMemberDetails = ({ team }) => {
         <p>Follow Me:</p>
         <div className="member-info-social d-flex gap-3">
           <a href={linkedin} className="icon">
-            <img src="/assets/img/icon/linkedinicon.svg" alt="LinkedIn" />
+            <img src={assetPath("/assets/img/icon/linkedinicon.svg")} alt="LinkedIn" />
           </a>
           <a href={facebook} className="icon">
-            <img src="/assets/img/icon/facebookicon.svg" alt="Facebook" />
+            <img src={assetPath("/assets/img/icon/facebookicon.svg")} alt="Facebook" />
           </a>
           <a href={twitter} className="icon">
-            <img src="/assets/img/icon/twittericon.svg" alt="Twitter" />
+            <img src={assetPath("/assets/img/icon/twittericon.svg")} alt="Twitter" />
           </a>
         </div>
       </div>

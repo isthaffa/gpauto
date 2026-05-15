@@ -1,6 +1,8 @@
 import React from "react";
 import { ServiceCardTwo } from "./ServiceCardTwo";
-import servicesDataTwo from "../../dataJson/servicesDataTwo.json";
+import servicesDataTwoRaw from "../../dataJson/servicesDataTwo.json";
+const servicesDataTwo = withBase(servicesDataTwoRaw);
+import { withBase } from "../../helper/assetPath";
 
 const ServicesSectionTwo = ({ styleTypleTwo }) => {
   const data = styleTypleTwo ? servicesDataTwo.slice(0, 3) : servicesDataTwo;

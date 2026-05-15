@@ -2,6 +2,7 @@ import React from "react";
 import Accordion from "../Accordion/Accordion";
 
 import accordionImg from "/assets/img/accordion-side-img.jpg";
+import { assetPath } from "../../helper/assetPath";
 
 const contactDetails = {
   title: " Frequently Asked Questions",
@@ -35,7 +36,7 @@ const FrequentlyQuestions = () => {
               <div className="heartbeat-icon">
                 <a href={`tel:${phone}`}>
                   <span className="ak-heartbeat-btn">
-                    <img src="/assets/img/icon/phone.svg" alt="Phone Icon" />
+                    <img src={assetPath("/assets/img/icon/phone.svg")} alt="Phone Icon" />
                   </span>
                 </a>
               </div>
@@ -45,7 +46,7 @@ const FrequentlyQuestions = () => {
               <div className="heartbeat-icon">
                 <a href={`mailto:${email}`}>
                   <span className="ak-heartbeat-btn">
-                    <img src="/assets/img/icon/email.svg" alt="Email Icon" />
+                    <img src={assetPath("/assets/img/icon/email.svg")} alt="Email Icon" />
                   </span>
                 </a>
               </div>
@@ -56,7 +57,7 @@ const FrequentlyQuestions = () => {
                 href="#"
                 className="d-flex gap-2 location text-hover-animation"
               >
-                <img src="/assets/img/icon/location.svg" alt="Location Icon" />
+                <img src={assetPath("/assets/img/icon/location.svg")} alt="Location Icon" />
                 <span>{address}</span>
               </a>
             </div>
@@ -66,7 +67,7 @@ const FrequentlyQuestions = () => {
                 className="date text-hover-animation d-flex align-items-center gap-2"
               >
                 <span>
-                  <img src="/assets/img/icon/date-icon.svg" alt="Date Icon" />
+                  <img src={assetPath("/assets/img/icon/date-icon.svg")} alt="Date Icon" />
                 </span>
                 <span>{workingHours}</span>
               </a>

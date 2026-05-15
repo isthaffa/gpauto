@@ -6,7 +6,9 @@ import BlogPost from "../components/Blog/BlogPost";
 import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 import SectionHeading from "../components/SectionHeading/SectionHeading";
 
-import blogsData from "../dataJson/blogsData.json";
+import blogsDataRaw from "../dataJson/blogsData.json";
+const blogsData = withBase(blogsDataRaw);
+import { withBase } from "../helper/assetPath";
 
 const SingleBlog = () => {
   const { blogId } = useParams();

@@ -1,25 +1,26 @@
 import React from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import { assetPath } from "../../helper/assetPath";
 
 const contactData = [
   {
     label: "Mail",
-    icon: "/assets/img/icon/email.svg",
+    icon: assetPath("/assets/img/icon/email.svg"),
     info: ["grandperformante@gmail.com"],
   },
   {
     label: "Location",
-    icon: "/assets/img/icon/location.svg",
+    icon: assetPath("/assets/img/icon/location.svg"),
     info: ["Dehiwala, Colombo", "Sri Lanka, 10350"],
   },
   {
     label: "Phone",
-    icon: "/assets/img/icon/phone.svg",
+    icon: assetPath("/assets/img/icon/phone.svg"),
     info: ["+94 77 119 9991"],
   },
   {
     label: "Open Hour",
-    icon: "/assets/img/icon/date-icon.svg",
+    icon: assetPath("/assets/img/icon/date-icon.svg"),
     info: ["Mon - Sat: 7:00 AM - 8:00 PM"],
   },
 ];

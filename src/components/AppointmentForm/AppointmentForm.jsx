@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { assetPath } from "../../helper/assetPath";
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -181,7 +182,7 @@ const AppointmentForm = () => {
                   </span>
                 )}
                 <span className="date-time-icon">
-                  <img src="/assets/img/icon/time-icon.svg" alt="Time" />
+                  <img src={assetPath("/assets/img/icon/time-icon.svg")} alt="Time" />
                 </span>
               </div>
               <div className="type_1">
@@ -201,7 +202,7 @@ const AppointmentForm = () => {
                   </span>
                 )}
                 <span className="date-time-icon">
-                  <img src="/assets/img/icon/date-icon.svg" alt="Date" />
+                  <img src={assetPath("/assets/img/icon/date-icon.svg")} alt="Date" />
                 </span>
               </div>
             </div>

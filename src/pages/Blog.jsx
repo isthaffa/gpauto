@@ -5,7 +5,9 @@ import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 import BlogFeature from "../components/Blog/BlogFeature";
 import Pagination from "../components/Pagination/Pagination";
 
-import blogsData from "../dataJson/blogsData.json";
+import blogsDataRaw from "../dataJson/blogsData.json";
+const blogsData = withBase(blogsDataRaw);
+import { withBase } from "../helper/assetPath";
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);

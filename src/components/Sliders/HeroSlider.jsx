@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Parallax } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ButtonCommon } from "../Button/Button";
+import { assetPath } from "../../helper/assetPath";
 
 const sliderData = [
   {
@@ -11,7 +12,7 @@ const sliderData = [
     maintitle: "Services",
     desp: " Our skilled team of certified technicians is here to provide top-notch car repair and auto services to ensure your vehicle performs at its best. Our skilled team of certified technicians.",
     url: "/appointment",
-    img: "/assets/img/hero/hero_slider_bg_1.png",
+    img: assetPath("/assets/img/hero/hero_slider_bg_1.png"),
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const sliderData = [
     maintitle: "MAINTENANCE",
     desp: " Our skilled team of certified technicians is here to provide top-notch car repair and auto services to ensure your vehicle performs at its best. Our skilled team of certified technicians.",
     url: "/appointment",
-    img: "/assets/img/hero/hero_slider_bg_2.png",
+    img: assetPath("/assets/img/hero/hero_slider_bg_2.png"),
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const sliderData = [
     maintitle: "Services",
     desp: " Our skilled team of certified technicians is here to provide top-notch car repair and auto services to ensure your vehicle performs at its best. Our skilled team of certified technicians.",
     url: "/appointment",
-    img: "/assets/img/hero/hero_slider_bg_1.png",
+    img: assetPath("/assets/img/hero/hero_slider_bg_1.png"),
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ const sliderData = [
     maintitle: "MAINTENANCE",
     desp: " Our skilled team of certified technicians is here to provide top-notch car repair and auto services to ensure your vehicle performs at its best. Our skilled team of certified technicians.",
     url: "/appointment",
-    img: "/assets/img/hero/hero_slider_bg_2.png",
+    img: assetPath("/assets/img/hero/hero_slider_bg_2.png"),
   },
 ];
 
@@ -94,7 +95,7 @@ const HeroSlider = () => {
                             rel="noopener noreferrer"
                           >
                             <img
-                              src="/assets/img/icon/facebook.svg"
+                              src={assetPath("/assets/img/icon/facebook.svg")}
                               alt="Facebook"
                             />
                           </Link>
@@ -104,7 +105,7 @@ const HeroSlider = () => {
                             rel="noopener noreferrer"
                           >
                             <img
-                              src="/assets/img/icon/linkedin.svg"
+                              src={assetPath("/assets/img/icon/linkedin.svg")}
                               alt="Instagram"
                             />
                           </Link>
@@ -113,7 +114,7 @@ const HeroSlider = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <img src="/assets/img/icon/twiter.svg" alt="X" />
+                            <img src={assetPath("/assets/img/icon/twiter.svg")} alt="X" />
                           </Link>
                         </div>
                       </div>
@@ -178,7 +179,7 @@ const HeroSlider = () => {
           <Link to="tel:(406)555-0120">
             <div className="d-flex align-items-center gap-2">
               <div className="heartbeat-icon">
-                <img src="/assets/img/icon/hero-email.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/hero-email.svg")} alt="..." />
               </div>
               <p className="ak-font-18 ak-white-color ak-semi-bold">
                 example@email.com
@@ -188,7 +189,7 @@ const HeroSlider = () => {
           <Link to="#">
             <div className="d-flex align-items-center gap-2">
               <div className="heartbeat-icon">
-                <img src="/assets/img/icon/heroaddress.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/heroaddress.svg")} alt="..." />
               </div>
               <p className="ak-font-18 ak-white-color ak-semi-bold">
                 123 Maple Street Toronto, On, Canada
@@ -197,7 +198,7 @@ const HeroSlider = () => {
           </Link>
           <div className="d-flex align-items-center gap-2">
             <div className="heartbeat-icon">
-              <img src="/assets/img/icon/hero-time.svg" alt="..." />
+              <img src={assetPath("/assets/img/icon/hero-time.svg")} alt="..." />
             </div>
             <p className="ak-font-18 ak-white-color ak-semi-bold">
               Mon - Sat: 7:00 AM - 8:00 PM
@@ -210,13 +211,13 @@ const HeroSlider = () => {
       </div>
       {/* <div className="social-hero">
         <Link to="https://www.x.com/" className="social-icon1">
-          <img src="/assets/img/icon/twiter.svg" alt="twitericon" />
+          <img src={assetPath("/assets/img/icon/twiter.svg")} alt="twitericon" />
         </Link>
         <Link to="https://www.facebook.com/" className="social-icon1">
-          <img src="/assets/img/icon/facebook.svg" alt="twitericon" />
+          <img src={assetPath("/assets/img/icon/facebook.svg")} alt="twitericon" />
         </Link>
         <Link to="https://www.linkedin.com/" className="social-icon1">
-          <img src="/assets/img/icon/linkedin.svg" alt="twitericon" />
+          <img src={assetPath("/assets/img/icon/linkedin.svg")} alt="twitericon" />
         </Link>
         <div className="social-horizontal"></div>
         <h6 className="social-link">FOLLOW US</h6>

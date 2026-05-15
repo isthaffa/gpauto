@@ -3,23 +3,24 @@ import { Link } from "react-router-dom";
 
 import { MoreBtn } from "../Button/Button";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import { assetPath } from "../../helper/assetPath";
 
 const speciaList = [
   {
     id: 1,
-    img: "/assets/img/service/service_1.jpg",
+    img: assetPath("/assets/img/service/service_1.jpg"),
     title: "Performance Upgrades and Customization",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },
   {
     id: 2,
-    img: "/assets/img/service/service_2.jpg",
+    img: assetPath("/assets/img/service/service_2.jpg"),
     title: "Engine Diagnostics and Repair",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },
   {
     id: 3,
-    img: "/assets/img/service/service_3.jpg",
+    img: assetPath("/assets/img/service/service_3.jpg"),
     title: "Tire Services",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },

@@ -4,6 +4,7 @@ import { EffectFade } from "swiper/modules";
 import SectionHeading from "../SectionHeading/SectionHeading";
 
 import testimaonialBgImg from "/assets/img/bg/testimaonial-img-bg.png";
+import { assetPath } from "../../helper/assetPath";
 
 const sliderData = [
   {
@@ -11,14 +12,14 @@ const sliderData = [
     name: "Roberts Bush",
     from: "From Canada",
     desp: "“There are many variations of passages of Lorem Ipsum available,butthe majority have suffered alteration in some form injected humour, or randomised”",
-    img: "/assets/img/testmaonail/testimaonial.png",
+    img: assetPath("/assets/img/testmaonail/testimaonial.png"),
   },
   {
     id: 2,
     name: "Butthe Bush",
     from: "From Canada",
     desp: "“There are many variations of passages of Lorem Ipsum available,butthe majority have suffered alteration in some form injected humour, or randomised”",
-    img: "/assets/img/testmaonail/testmaonail_1.png",
+    img: assetPath("/assets/img/testmaonail/testmaonail_1.png"),
   },
 ];
 
@@ -39,14 +40,14 @@ const Testimonial = () => {
             className="testimonal-prev button"
             onClick={() => swiperRef.current.slideNext()}
           >
-            <img src="/assets/img/icon/prev.svg" alt="..." />
+            <img src={assetPath("/assets/img/icon/prev.svg")} alt="..." />
             <span> prev</span>
           </button>
           <button
             className="testimonal-next button"
             onClick={() => swiperRef.current.slidePrev()}
           >
-            <span>next</span> <img src="/assets/img/icon/next.svg" alt=".." />
+            <span>next</span> <img src={assetPath("/assets/img/icon/next.svg")} alt=".." />
           </button>
         </div>
       </div>

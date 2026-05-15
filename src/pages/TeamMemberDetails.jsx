@@ -5,8 +5,10 @@ import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 import SingleTeamMemberDetails from "../components/Team/SingleTeamMemberDetails";
 import TeamDetailsSlider from "../components/Team/TeamDetailsSlider";
 
-import membersData from "../dataJson/teamMembersData.json";
+import membersDataRaw from "../dataJson/teamMembersData.json";
+const membersData = withBase(membersDataRaw);
 import SpecialistTeamMembers from "../components/Team/SpecialistTeamMembers";
+import { withBase } from "../helper/assetPath";
 
 const TeamMemberDetails = () => {
   const { teamId } = useParams();

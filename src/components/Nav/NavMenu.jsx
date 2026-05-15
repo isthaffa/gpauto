@@ -5,6 +5,7 @@ import MenuItem from "./MenuItem";
 import logo from "/assets/img/icon/gp-logo.svg";
 
 import navitemlist from "../../dataJson/navitemlist.json";
+import { assetPath } from "../../helper/assetPath";
 
 export default function NavMenu() {
   const [navBar, setNavbar] = useState("");
@@ -54,7 +55,7 @@ export default function NavMenu() {
               <div className="d-flex align-items-center gap-3">
                 <div className="heartbeat-icon">
                   <span className="ak-heartbeat-btn">
-                    <img src="/assets/img/icon/phone.svg" alt="..." />
+                    <img src={assetPath("/assets/img/icon/phone.svg")} alt="..." />
                   </span>
                 </div>
                 <h6>+94 77 119 9991</h6>

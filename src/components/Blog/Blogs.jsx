@@ -1,25 +1,26 @@
 import React from "react";
 import BlogCard from "./BlogCard";
 import SectionHeading from "../SectionHeading/SectionHeading";
+import { assetPath } from "../../helper/assetPath";
 
 const blogPosts = [
   {
     id: 1,
     title: "The Importance of Regular Car Maintenance",
     date: "17.10.2023",
-    imageUrl: "/assets/img/blog/blog_3.jpg",
+    imageUrl: assetPath("/assets/img/blog/blog_3.jpg"),
   },
   {
     id: 2,
     title: "The Roadmap to Reliability: Essential Car Care Tips",
     date: "05.11.2023",
-    imageUrl: "/assets/img/blog/blog_1.jpg",
+    imageUrl: assetPath("/assets/img/blog/blog_1.jpg"),
   },
   {
     id: 3,
     title: "From Garage to Glory: Transform Your Vehicle's Health",
     date: "12.11.2023",
-    imageUrl: "/assets/img/blog/blog_2.jpg",
+    imageUrl: assetPath("/assets/img/blog/blog_2.jpg"),
   },
 ];
 

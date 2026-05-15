@@ -1,17 +1,18 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { assetPath } from "../../helper/assetPath";
 
 const imgList = [
-  "/assets/img/client/trusted-client_1.png",
-  "/assets/img/client/trusted-client_2.png",
-  "/assets/img/client/trusted-client_3.png",
-  "/assets/img/client/trusted-client_4.png",
-  "/assets/img/client/trusted-client_5.png",
-  "/assets/img/client/trusted-client_6.png",
-  "/assets/img/client/trusted-client_7.png",
-  "/assets/img/client/trusted-client_1.png",
-  "/assets/img/client/trusted-client_2.png",
-  "/assets/img/client/trusted-client_3.png",
+  assetPath("/assets/img/client/trusted-client_1.png"),
+  assetPath("/assets/img/client/trusted-client_2.png"),
+  assetPath("/assets/img/client/trusted-client_3.png"),
+  assetPath("/assets/img/client/trusted-client_4.png"),
+  assetPath("/assets/img/client/trusted-client_5.png"),
+  assetPath("/assets/img/client/trusted-client_6.png"),
+  assetPath("/assets/img/client/trusted-client_7.png"),
+  assetPath("/assets/img/client/trusted-client_1.png"),
+  assetPath("/assets/img/client/trusted-client_2.png"),
+  assetPath("/assets/img/client/trusted-client_3.png"),
 ];
 
 const TrustedClient = () => {

@@ -1,12 +1,13 @@
 import React from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import { ButtonCommon } from "../Button/Button";
+import { assetPath } from "../../helper/assetPath";
 
 const chooseUsData = {
   bgText: "Feature",
   title: "why Choose Us",
   desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's stan.",
-  img: "/assets/img/chooseus/choose-us.png",
+  img: assetPath("/assets/img/chooseus/choose-us.png"),
   list: [
     { title: "Certified Technicians" },
     { title: "Comprehensive Repair Services" },
@@ -47,7 +48,7 @@ const ChooseUs = () => {
             <img src={img} alt="..." />
             <img
               className="circle-img"
-              src="/assets/img/chooseus/Circle.png"
+              src={assetPath("/assets/img/chooseus/Circle.png")}
               alt="..."
             />
           </div>

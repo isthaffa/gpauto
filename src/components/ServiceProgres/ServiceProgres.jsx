@@ -1,25 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { assetPath } from "../../helper/assetPath";
 
 const serviceProgresData = [
   {
     id: 1,
     number: 1,
-    icon: "/assets/img/icon/speedome.svg",
+    icon: assetPath("/assets/img/icon/speedome.svg"),
     title: "PERFOMANCE CHECK",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },
   {
     id: 2,
     number: 2,
-    icon: "/assets/img/icon/car-repair.svg",
+    icon: assetPath("/assets/img/icon/car-repair.svg"),
     title: "AUTO REPAIR",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },
   {
     id: 3,
     number: 3,
-    icon: "/assets/img/icon/car.svg",
+    icon: assetPath("/assets/img/icon/car.svg"),
     title: "FLEET SERVICES",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },

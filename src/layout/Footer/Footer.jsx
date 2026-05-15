@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import TextAnimation from "../../components/TextAnimation/TextAnimation";
 
 import footerLogo from "/assets/img/icon/gp-logo.svg";
+import { assetPath } from "../../helper/assetPath";
 
 const footerDataArray = [
   {
@@ -141,7 +142,7 @@ const Footer = () => {
                       <div className="heartbeat-icon">
                         <Link to={`tel:${item.phone}`}>
                           <span className="ak-heartbeat-btn">
-                            <img src="/assets/img/icon/phone.svg" alt="..." />
+                            <img src={assetPath("/assets/img/icon/phone.svg")} alt="..." />
                           </span>
                         </Link>
                       </div>
@@ -172,7 +173,7 @@ const Footer = () => {
                     <Link to="#" className="location">
                       <span className="me-1">
                         <img
-                          src="/assets/img/icon/location.svg"
+                          src={assetPath("/assets/img/icon/location.svg")}
                           alt="Location"
                         />
                       </span>
@@ -180,14 +181,14 @@ const Footer = () => {
                     </Link>
                     <Link to={`mailto:${item.email}`} className="email">
                       <span className="me-1">
-                        <img src="/assets/img/icon/email.svg" alt="Email" />
+                        <img src={assetPath("/assets/img/icon/email.svg")} alt="Email" />
                       </span>
                       {item.email}
                     </Link>
                     <p className="date">
                       <span className="me-1">
                         <img
-                          src="/assets/img/icon/calender.svg"
+                          src={assetPath("/assets/img/icon/calender.svg")}
                           alt="Calendar"
                         />
                       </span>
@@ -206,13 +207,13 @@ const Footer = () => {
             </p>
             <div className="social-icon">
               <Link to="https://www.facebook.com/">
-                <img src="/assets/img/icon/facebookicon.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/facebookicon.svg")} alt="..." />
               </Link>
               <Link to="https://www.linkedin.com/">
-                <img src="/assets/img/icon/linkedinicon.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/linkedinicon.svg")} alt="..." />
               </Link>
               <Link to="https://www.x.com/">
-                <img src="/assets/img/icon/twittericon.svg" alt="..." />
+                <img src={assetPath("/assets/img/icon/twittericon.svg")} alt="..." />
               </Link>
             </div>
           </div>

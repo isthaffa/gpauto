@@ -2,13 +2,14 @@ import React from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import { MoreBtn } from "../Button/Button";
 import TeamCard from "./TeamCard";
+import { assetPath } from "../../helper/assetPath";
 
 const membersData = [
   {
     id: 1,
     name: "Darrell T. Beedle",
     title: "Lead Mechanic",
-    image: "/assets/img/member/member_1.jpg",
+    image: assetPath("/assets/img/member/member_1.jpg"),
     desp: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised.",
     socialLinks: {
       linkedin: "https://www.facebook.com/",
@@ -26,7 +27,7 @@ const membersData = [
     id: 2,
     name: "Michael Jack",
     title: "Service Advisor",
-    image: "/assets/img/member/member_2.jpg",
+    image: assetPath("/assets/img/member/member_2.jpg"),
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     socialLinks: {
       linkedin: "https://www.facebook.com/",
@@ -44,7 +45,7 @@ const membersData = [
     id: 3,
     name: "Cathy Sparkman",
     title: "Diagnostic Technician",
-    image: "/assets/img/member/member_3.jpg",
+    image: assetPath("/assets/img/member/member_3.jpg"),
     desp: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     socialLinks: {
       linkedin: "https://www.facebook.com/",

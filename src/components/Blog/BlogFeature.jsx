@@ -1,5 +1,6 @@
 import React from "react";
 import { MoreBtn } from "../Button/Button";
+import { assetPath } from "../../helper/assetPath";
 
 const blogData = {
   id: 1,
@@ -7,7 +8,7 @@ const blogData = {
   title: "Driving with Confidence: The Crucial Role of Routine Car Maintenance",
   description:
     "Your car is more than just a means of getting from point A to point B; it's a reliable companion on your daily journey. Just like any dependable friend, your car requires regular care to ensure it remains in...",
-  imageUrl: "/assets/img/blog/blog-show.jpg",
+  imageUrl: assetPath("/assets/img/blog/blog-show.jpg"),
 };
 
 const BlogFeature = () => {

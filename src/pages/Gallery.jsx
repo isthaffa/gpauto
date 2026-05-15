@@ -5,7 +5,9 @@ import LightGallery from "lightgallery/react";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 
-import imageData from "../dataJson/galleryImgData.json";
+import imageDataRaw from "../dataJson/galleryImgData.json";
+const imageData = withBase(imageDataRaw);
+import { assetPath, withBase } from "../helper/assetPath";
 
 const Gallery = () => {
   return (
@@ -27,7 +29,7 @@ const Gallery = () => {
               <img src={image.thumbnail} alt={image.orientation} />
               <div className="frame gallery-hover-icon">
                 <span>
-                  <img src="/assets/img/icon/zoom.svg" alt="zoom" />
+                  <img src={assetPath("/assets/img/icon/zoom.svg")} alt="zoom" />
                 </span>
               </div>
             </Link>

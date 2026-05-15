@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { assetPath } from "../../helper/assetPath";
 
 const PricingCard = ({
   title,
@@ -24,7 +25,7 @@ const PricingCard = ({
         {options.map((option, index) => (
           <div className="option" key={index}>
             <div className="icon">
-              <img src="/assets/img/icon/price-table-icon.svg" alt="..." />
+              <img src={assetPath("/assets/img/icon/price-table-icon.svg")} alt="..." />
             </div>
             <p className="title">{option}</p>
           </div>
@@ -34,7 +35,7 @@ const PricingCard = ({
         <span>
           GET
           <span>
-            <img src="/assets/img/icon/started-btn.svg" alt="..." />
+            <img src={assetPath("/assets/img/icon/started-btn.svg")} alt="..." />
             <br />
           </span>
           STARTED

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { assetPath } from "../../helper/assetPath";
 
 export function ButtonCommon(props) {
   return (
@@ -20,7 +21,7 @@ export function MoreBtn(props) {
 export function CtaBtn(props) {
   return (
     <Link to={props.to} className="cta-btn">
-      <img src="/assets/img/icon/phone.svg" alt="..." />
+      <img src={assetPath("/assets/img/icon/phone.svg")} alt="..." />
       <span className="ms-2"> {props.children}</span>
     </Link>
   );

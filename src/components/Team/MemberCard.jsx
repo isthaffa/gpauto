@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { assetPath } from "../../helper/assetPath";
 
 const MemberCard = ({ member, delay }) => {
   return (
@@ -20,13 +21,13 @@ const MemberCard = ({ member, delay }) => {
           </div>
           <div className="member-info-social">
             <Link href={member.socialLinks.linkedin} className="icon">
-              <img src="/assets/img/icon/linkedinicon.svg" alt="LinkedIn" />
+              <img src={assetPath("/assets/img/icon/linkedinicon.svg")} alt="LinkedIn" />
             </Link>
             <Link to={member.socialLinks.facebook} className="icon">
-              <img src="/assets/img/icon/facebookicon.svg" alt="Facebook" />
+              <img src={assetPath("/assets/img/icon/facebookicon.svg")} alt="Facebook" />
             </Link>
             <Link to={member.socialLinks.twitter} className="icon">
-              <img src="/assets/img/icon/twittericon.svg" alt="Twitter" />
+              <img src={assetPath("/assets/img/icon/twittericon.svg")} alt="Twitter" />
             </Link>
           </div>
         </div>
