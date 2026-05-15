@@ -136,6 +136,24 @@
     align-items: center;
     .swiper-slide {
       width: 14.4%;
+
+      @media screen and (max-width: 991px) {
+        width: 25%;
+      }
+      @media screen and (max-width: 575px) {
+        width: 33.33%;
+      }
+    }
+  }
+  .trusted-client {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
     }
   }
 }
@@ -183,13 +201,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .ak-trusted-client-slider {
-    .swiper-wrapper {
-      .swiper-slide {
-        width: 33.3%;
-      }
-    }
-  }
 
   .team-single-page-slider {
     height: 40vh;

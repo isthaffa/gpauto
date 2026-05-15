@@ -8,8 +8,8 @@ const footerDataArray = [
   {
     className: "footer-info",
     dataAosDelay: "0",
-    phone: "1-800-915-6271",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is.",
+    phone: "+94 77 119 9991",
+    desp: "Grand Performante Automotive is your trusted garage in Dehiwala, Colombo. We deliver premium car repair and auto services with a passion for performance.",
   },
   {
     className: "footer-menu-one",
@@ -17,7 +17,6 @@ const footerDataArray = [
     links: [
       { title: "About", link: "/about" },
       { title: "Service", link: "/service" },
-      { title: "Pricing", link: "/pricing" },
       { title: "Team", link: "/team" },
       { title: "Contact Us", link: "/contact" },
     ],
@@ -35,8 +34,8 @@ const footerDataArray = [
   {
     className: "footer-address",
     dataAosDelay: "150",
-    address: "901 N Pitt Str., Suite 170 Alexandria, NY, USA",
-    email: "example@email.com",
+    address: "Dehiwala, Colombo, Sri Lanka, 10350",
+    email: "grandperformante@gmail.com",
   },
 ];
 
@@ -192,7 +191,7 @@ const Footer = () => {
                           alt="Calendar"
                         />
                       </span>
-                      Sun - Thu: Open 24/7
+                      Mon - Sat: 7:00 AM - 8:00 PM
                     </p>
                   </div>
                 )}

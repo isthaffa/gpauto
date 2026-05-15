@@ -5,22 +5,22 @@ const contactData = [
   {
     label: "Mail",
     icon: "/assets/img/icon/email.svg",
-    info: ["example@email.com", "crasauto@email.com"],
+    info: ["grandperformante@gmail.com"],
   },
   {
     label: "Location",
     icon: "/assets/img/icon/location.svg",
-    info: ["901 N Pitt Str., Suite 170", "Alexandria, NY, USA"],
+    info: ["Dehiwala, Colombo", "Sri Lanka, 10350"],
   },
   {
     label: "Phone",
     icon: "/assets/img/icon/phone.svg",
-    info: ["(406) 555-0120"],
+    info: ["+94 77 119 9991"],
   },
   {
     label: "Open Hour",
     icon: "/assets/img/icon/date-icon.svg",
-    info: ["Sun - Thu: Open 24/7"],
+    info: ["Mon - Sat: 7:00 AM - 8:00 PM"],
   },
 ];
 

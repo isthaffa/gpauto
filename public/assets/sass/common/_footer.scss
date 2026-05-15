@@ -104,12 +104,18 @@
       }
     }
     .footer-address {
-      max-width: 223px;
+      max-width: 320px;
       display: flex;
       flex-direction: column;
       gap: 15px;
       a {
         font-size: 18px;
+        display: flex;
+        align-items: center;
+      }
+      .date {
+        display: flex;
+        align-items: center;
       }
       .adress-title {
         font-size: 18px;

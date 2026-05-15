@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax, Pagination } from "swiper/modules";
-import { ButtonCommon } from "../Button/Button";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { Parallax } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { ButtonCommon } from "../Button/Button";
 
 const sliderData = [
   {
@@ -48,14 +48,7 @@ const HeroSlider = () => {
         loop={true}
         slidesPerView={"auto"}
         parallax={true}
-        pagination={{
-          clickable: true,
-          el: ".hero-swiper-pagination",
-          renderBullet: function (index, className) {
-            return '<p className="' + className + '">' + (index + 1) + "</p>";
-          },
-        }}
-        modules={[Parallax, Pagination]}
+        modules={[Parallax]}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -89,8 +82,41 @@ const HeroSlider = () => {
                       </p>
                     </div>
                     <div className="ak-height-45 ak-height-lg-30"></div>
-                    <div data-swiper-parallax="300">
+                    <div className="hero-bottom-row" data-swiper-parallax="300">
                       <ButtonCommon to={item.url}>APPOINTMENT</ButtonCommon>
+                      <div className="hero-social-inline">
+                        <div className="hero-social-line"></div>
+                        <span className="hero-social-label">FOLLOW US</span>
+                        <div className="hero-social-icons">
+                          <Link
+                            to="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src="/assets/img/icon/facebook.svg"
+                              alt="Facebook"
+                            />
+                          </Link>
+                          <Link
+                            to="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src="/assets/img/icon/linkedin.svg"
+                              alt="Instagram"
+                            />
+                          </Link>
+                          <Link
+                            to="https://www.x.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src="/assets/img/icon/twiter.svg" alt="X" />
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +173,7 @@ const HeroSlider = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      {/* <div className="container">
         <div className="hero-contact-info">
           <Link to="tel:(406)555-0120">
             <div className="d-flex align-items-center gap-2">
@@ -174,15 +200,15 @@ const HeroSlider = () => {
               <img src="/assets/img/icon/hero-time.svg" alt="..." />
             </div>
             <p className="ak-font-18 ak-white-color ak-semi-bold">
-              Sun - Thu: Open 27/7
+              Mon - Sat: 7:00 AM - 8:00 PM
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="hero-pagination">
         <div className="hero-swiper-pagination"></div>
       </div>
-      <div className="social-hero">
+      {/* <div className="social-hero">
         <Link to="https://www.x.com/" className="social-icon1">
           <img src="/assets/img/icon/twiter.svg" alt="twitericon" />
         </Link>
@@ -194,7 +220,7 @@ const HeroSlider = () => {
         </Link>
         <div className="social-horizontal"></div>
         <h6 className="social-link">FOLLOW US</h6>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import classNames from "classnames";
 import NavMenu from "../../components/Nav/NavMenu";
+import TopBar from "../../components/TopBar/TopBar";
 import navitemlist from "../../dataJson/navitemlist.json";
 
 const Header = () => {
@@ -53,6 +54,7 @@ const Header = () => {
   );
   return (
     <header ref={headerRef} className={navClass}>
+      <TopBar />
       <NavMenu props={navitemlist} />
       <div className="nav-bar-border"></div>
     </header>

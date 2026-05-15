@@ -2,7 +2,6 @@
 import AutoCounter from "../components/AutoCounter/AutoCounter";
 import Blogs from "../components/Blog/Blogs";
 import ChooseUs from "../components/ChooseUs/ChooseUs";
-import PricingTable from "../components/Pricing/PricingTable";
 import ServiceProgres from "../components/ServiceProgres/ServiceProgres";
 import Services from "../components/Services/ServicesSection";
 import HeroSlider from "../components/Sliders/HeroSlider";
@@ -23,7 +22,6 @@ export default function Home() {
       <TrustedClient />
       <Testimonial />
       <Teams />
-      <PricingTable />
       <Blogs styleTypeTwo={true} />
     </>
   );

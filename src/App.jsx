@@ -11,7 +11,6 @@ import ErrorPages from "./pages/ErrorPages";
 import Faq from "./pages/Faq";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
 import Service from "./pages/Service";
 import ServicesTwo from "./pages/ServicesTwo";
 import SingleBlog from "./pages/SingleBlog";
@@ -42,7 +41,6 @@ export default function App() {
         <Route path="/team-member/:teamId" element={<TeamMemberDetails />} />
         <Route path="/testimonial" element={<Testimonials />} />
         <Route path="/appointment" element={<Appointment />} />
-        <Route path="/pricing" element={<Pricing />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
