@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import TextAnimation from "../../components/TextAnimation/TextAnimation";
 
-import footerLogo from "/assets/img/icon/footer-logo.svg";
+import footerLogo from "/assets/img/icon/gp-logo.svg";
 
 const footerDataArray = [
   {
     className: "footer-info",
     dataAosDelay: "0",
-    phone: "(406) 555-0120",
+    phone: "1-800-915-6271",
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is.",
   },
   {
@@ -140,14 +140,14 @@ const Footer = () => {
                     <div className="ak-height-35 ak-height-lg-30"></div>
                     <div className="d-flex align-items-center gap-3">
                       <div className="heartbeat-icon">
-                        <Link to="tel:(406)555-0120">
+                        <Link to={`tel:${item.phone}`}>
                           <span className="ak-heartbeat-btn">
                             <img src="/assets/img/icon/phone.svg" alt="..." />
                           </span>
                         </Link>
                       </div>
                       <TextAnimation
-                        link={"tel:(406)555-0120"}
+                        link={`tel:${item.phone}`}
                         title={item.phone}
                         classNamePass="phone white"
                       />

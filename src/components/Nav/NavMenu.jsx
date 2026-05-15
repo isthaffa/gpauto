@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuItem from "./MenuItem";
 
-import logo from "/assets/img/icon/logo.svg";
+import logo from "/assets/img/icon/gp-logo.svg";
 
 import navitemlist from "../../dataJson/navitemlist.json";
 

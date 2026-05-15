@@ -200,7 +200,21 @@
 .ak-site_branding {
   display: inline-block;
   img {
-    max-height: 45px;
+    max-height: 120px;
+    width: auto;
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .ak-site_branding img {
+    max-height: 95px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ak-site_branding img {
+    max-height: 80px;
   }
 }
 
@@ -638,6 +652,9 @@
   .ak-site_header .current-menu-item > a:before {
     display: none;
   }
+  .ak-main-header-right {
+    display: none;
+  }
   .ak-site_header.ak-style1 .ak-main_header_center {
     .ak-site_branding {
       position: absolute;
@@ -679,7 +696,7 @@
     margin-right: 0;
   }
   .ak-site_branding img {
-    max-height: 32px;
+    max-height: 60px;
   }
   .ak-site_header.ak-style1 .ak-btn {
     span {
@@ -690,9 +707,6 @@
       width: 20px;
       height: 20px;
     }
-  }
-  .ak-main-header-right {
-    display: none;
   }
 }
 
